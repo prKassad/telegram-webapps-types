@@ -1,7 +1,5 @@
-declare const Telegram: TelegramWebApps.Root;
-
-declare namespace TelegramWebApps {
-  interface Root {
+export declare namespace TelegramWebApps {
+  interface SDK {
     WebApp: WebApp;
   }
 
@@ -255,4 +253,8 @@ declare namespace TelegramWebApps {
      */
     is_visible?: boolean;
   }
+}
+
+declare global {
+  const Telegram: TelegramWebApps.SDK;
 }
