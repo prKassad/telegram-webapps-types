@@ -121,10 +121,10 @@ export declare namespace TelegramWebApps {
     /**
      * The value of the startattach parameter, passed via link. Only returned for Web Apps when launched from the attachment menu via link.
      */
-    start_param?: string
+    start_param?: string;
     /**
      * Unix time when the form was opened.
-     */;
+     */
     auth_date?: number;
     /**
      * A hash of all passed parameters, which the bot server can use to check their validity.
