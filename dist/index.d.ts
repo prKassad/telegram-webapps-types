@@ -107,32 +107,27 @@ export declare namespace TelegramWebApps {
 
   interface WebAppInitData {
     /**
-     * Background color in the #RRGGBB format.
-     * Also available as the CSS variable var(--tg-theme-bg-color).
+     * A unique identifier for the Web App session, required for sending messages via the answerWebAppQuery method.
      */
     query_id?: string;
     /**
-     * Main text color in the #RRGGBB format.
-     * Also available as the CSS variable var(--tg-theme-text-color).
+     * An object containing data about the current user.
      */
     user?: WebAppUser;
     /**
-     * Hint text color in the #RRGGBB format.
-     * Also available as the CSS variable var(--tg-theme-hint-color).
+     * An object containing data about the chat partner of the current user in the chat where the bot was launched via the attachment menu. Returned only for Web Apps launched via the attachment menu.
      */
     receiver?: WebAppUser;
     /**
-     * Link color in the #RRGGBB format.
-     * Also available as the CSS variable var(--tg-theme-link-color).
+     * The value of the startattach parameter, passed via link. Only returned for Web Apps when launched from the attachment menu via link.
      */
-    start_param?: string /**
-     * Button color in the #RRGGBB format.
-    Also available as the CSS variable var(--tg-theme-button-color).
+    start_param?: string
+    /**
+     * Unix time when the form was opened.
      */;
     auth_date?: number;
     /**
-     * Button text color in the #RRGGBB format.
-     * Also available as the CSS variable var(--tg-theme-button-text-color).
+     * A hash of all passed parameters, which the bot server can use to check their validity.
      */
     hash?: string;
   }
