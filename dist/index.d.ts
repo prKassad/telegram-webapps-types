@@ -191,39 +191,39 @@ export declare namespace TelegramWebApps {
     /**
      * A method to set the button text.
      */
-    setText(text: string): void;
+    setText(text: string): MainButton;
     /**
      * A method that sets the button press event handler. An alias for Telegram.WebApp.onEvent('mainButtonClicked', callback)
      */
-    onClick(callback: Function): void;
+    onClick(callback: Function): MainButton;
     /**
      * A method to make the button visible.
      */
-    show(): void;
+    show(): MainButton;
     /**
      * A method to hide the button.
      */
-    hide(): void;
+    hide(): MainButton;
     /**
      * A method to enable the button.
      */
-    enable(): void;
+    enable(): MainButton;
     /**
      * A method to disable the button.
      */
-    disable(): void;
+    disable(): MainButton;
     /**
      * A method to show a loading indicator on the button.
      */
-    showProgress(leaveActive: boolean): void;
+    showProgress(leaveActive: boolean): MainButton;
     /**
      * A method to hide the loading indicator.
      */
-    hideProgress(): void;
+    hideProgress(): MainButton;
     /**
      * A method to set the button parameters.
      */
-    setParams(params: MainButtonParams): void;
+    setParams(params: MainButtonParams): MainButton;
   }
 
   interface MainButtonParams {

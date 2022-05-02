@@ -1,6 +1,6 @@
 {
   "name": "telegram-webapps-types",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "TypeScript typings for Telegram Web Apps for Bots. See https://core.telegram.org/bots/webapps",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
