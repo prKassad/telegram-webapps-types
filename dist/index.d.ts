@@ -270,9 +270,6 @@ export declare namespace TelegramWebApps {
      * A method to hide the button.
      */
     hide(): BackButton;
-    /**
-     * A method to enable the button.
-     */
   }
 
 }
