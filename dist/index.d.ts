@@ -6,7 +6,7 @@ export declare namespace TelegramWebApps {
   /**
    * Available app events.
    */
-  type EventType = "themeChanged" | "viewportChanged" | "mainButtonClicked";
+  type EventType = "themeChanged" | "viewportChanged" | "mainButtonClicked" | "backButtonClicked";
 
   interface WebApp {
     /**
@@ -248,6 +248,33 @@ export declare namespace TelegramWebApps {
      */
     is_visible?: boolean;
   }
+
+  interface BackButton {
+    /**
+     * Shows whether the button is visible. Set to false by default.
+     */
+    isVisible: boolean;
+    /**
+     * A method that sets the button press event handler. An alias for Telegram.WebApp.onEvent('backButtonClicked', callback)
+     */
+     onClick(callback: Function): BackButton;
+    /**
+     * A method that removes the button press event handler. An alias for Telegram.WebApp.offEvent('backButtonClicked', callback)
+    */
+    offClick(): BackButton;
+    /**
+     * A method to make the button visible.
+     */
+    show(): BackButton;
+    /**
+     * A method to hide the button.
+     */
+    hide(): BackButton;
+    /**
+     * A method to enable the button.
+     */
+  }
+
 }
 
 declare global {
