@@ -152,7 +152,7 @@ export declare namespace TelegramWebApps {
     /**
      * Username of the user or bot.
      */
-    usernames?: string;
+    username?: string;
     /**
      * IETF language tag of the user's language. Returns in user field only.
      */
